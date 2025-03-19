@@ -8,7 +8,7 @@ steps:
   # Step 2: Build the Docker image for the Go application
   - name: 'gcr.io/cloud-builders/docker'
     id: 'Build Docker image'
-    args: ['build', '-t', '-docker.pkg.dev/qwiklabs-gcp-00-7bb782916dd9/hello-cloudbuild:6e90207', '.']
+    args: ['build', '-t', 'docker.pkg.dev/qwiklabs-gcp-00-7bb782916dd9/hello-cloudbuild:6e90207', '.']
 
   # Step 3: Push the Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
